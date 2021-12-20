@@ -1,5 +1,5 @@
 {
-  "pixel.APPNAME": {
-    "component": "index"
+  "pixel.affiliates-order-form-spy": {
+    "component": "EventListenerTest"
   }
 }
