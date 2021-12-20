@@ -4,32 +4,15 @@
   "version": "0.0.1",
   "title": "Affiliates Order Form Spy",
   "description": "An app used by vtex.affiliates to spy on orderForm changes during user navigation on stores.",
-  "billingOptions": {
-    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
-    "support": {
-      "url": "https://support.vtex.com/hc/requests"
-    },
-    "free": true,
-    "type": "free",
-    "availableCountries": ["*"]
-  },
   "builders": {
     "docs": "0.x",
     "pages": "0.x",
     "react": "2.x",
     "node": "6.x"
   },
-  "dependencies": {},
-  "settingsSchema": {
-    "title": "YOUR APP NAME",
-    "type": "object",
-    "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
-        "type": "string"
-      }
-    }
+  "dependencies": {
+    "vtex.affiliates": "0.x"
   },
+  "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

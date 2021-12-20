@@ -4,14 +4,14 @@ import type { OrderFormEvent } from '../typings/orderFormEvent'
 
 export async function notify(ctx: Context, next: () => Promise<unknown>) {
   const {
-    clients: { events },
+    clients: { verifyAffiliation },
   } = ctx
 
   const orderFormEvents = (await json(ctx.req)).events as OrderFormEvent[]
 
   const eventsPromise = orderFormEvents
     .filter(e => e.triggered)
-    .map(e => events.sendEvent('', e.eventName, e.eventObject))
+    .map(e => verifyAffiliation.send(e.eventObject.orderFormId))
 
   await Promise.all(eventsPromise)
 

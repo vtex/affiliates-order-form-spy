@@ -1,5 +1,5 @@
 export interface OrderFormEvent {
   eventName: string
-  eventObject: unknown
+  eventObject: { orderFormId: string }
   triggered: boolean
 }
