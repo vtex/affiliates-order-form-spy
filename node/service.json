@@ -1,0 +1,20 @@
+{
+  "memory": 256,
+  "ttl": 120,
+  "timeout": 10,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "notify": {
+      "path": "/_v/order-form-courier/notify",
+      "public": true
+    }
+  },
+  "events": {
+    "orderFormEmailUpdated": {
+      "sender": "order-form-courier",
+      "keys": ["order-form-email-updated"]
+    }
+  }
+}
