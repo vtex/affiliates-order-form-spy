@@ -1,4 +1,11 @@
-interface Window extends Window {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  dataLayer: any[]
+import type { OrderForm } from '@vtex/clients'
+
+declare global {
+  interface Window extends Window {
+    vtexjs: {
+      checkout: {
+        orderForm: OrderForm
+      }
+    }
+  }
 }

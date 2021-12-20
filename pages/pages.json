@@ -1,0 +1,7 @@
+{
+  "extensions": {
+    "checkout/universal/orderFormEvents": {
+      "component": "index"
+    }
+  }
+}

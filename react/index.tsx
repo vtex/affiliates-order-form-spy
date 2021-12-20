@@ -1,19 +1,9 @@
-import { canUseDOM } from 'vtex.render-runtime'
+import React from 'react'
 
-import type { PixelMessage } from './typings/events'
+import OrderFormUpdateHandler from './OrderFormUpdateHandler'
 
-export function handleEvents(e: PixelMessage) {
-  switch (e.data.eventName) {
-    case 'vtex:pageView': {
-      break
-    }
-
-    default: {
-      break
-    }
-  }
+const EventListenerTest: React.FC = () => {
+  return <OrderFormUpdateHandler />
 }
 
-if (canUseDOM) {
-  window.addEventListener('message', handleEvents)
-}
+export default EventListenerTest
