@@ -10,9 +10,7 @@
     "react": "2.x",
     "node": "6.x"
   },
-  "dependencies": {
-    "vtex.affiliates": "0.x"
-  },
+  "dependencies": {},
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

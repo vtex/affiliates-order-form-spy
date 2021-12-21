@@ -4,7 +4,7 @@ import { method, LRUCache, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { notify } from './middlewares/notify'
 
-const TIMEOUT_MS = 800
+const TIMEOUT_MS = 2000
 
 // Create a LRU memory cache for the Status client.
 // The @vtex/api HttpClient respects Cache-Control headers and uses the provided cache.
