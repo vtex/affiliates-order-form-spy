@@ -9,4 +9,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- Add interface for newsletter subscription event
+- Change timeout from `2000 ms` to `5000 ms` to prevent timeout exceptions 
