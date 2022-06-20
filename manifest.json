@@ -1,7 +1,7 @@
 {
   "name": "affiliates-order-form-spy",
   "vendor": "vtex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "Affiliates Order Form Spy",
   "description": "An app used by vtex.affiliates to spy on orderForm changes during user navigation on stores.",
   "builders": {
