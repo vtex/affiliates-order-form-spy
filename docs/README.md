@@ -1,56 +1,85 @@
-📢 Use this project, [contribute](https://github.com/vtex-apps/CHANGEME) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+# Affiliates Order Form Spy
 
-# APP NAME
+The VTEX Affiliates Order Form Spy app is responsible for getting the checkout email and monitoring the order form, sending the email information for the Affiliates main app to use on the order flow.
 
-<!-- DOCS-IGNORE:start -->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- DOCS-IGNORE:end -->
+## 🚀 Getting started
 
-Under the app's name, you should explain the topic, giving a **brief description** of the **app's functionality** (what is it for?) in a store.
+These instructions will allow you to get a copy of the running project on your local machine for the purposes of querying the vtex api and integrating with app **Affiliates Order Form Spy**.
 
-Next, you can **add media** (either an image of a GIF) if possible, so that users can better understand how the app works in practice. 
+## 🔧 Installation
 
-![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
+To start the installation, you need to clone the GitLab project into a directory of your choice:
 
-## Configuration
 
-It is possible to install in your store either by using App Store or the VTEX IO Toolbelt.
+```
+ cd "directory of your choice"
+```
 
-### Using VTEX App Store
+SSH clone 
+```
+ git clone git@github.com:vtex-apps/affiliates-order-form-spy.git
+```
+or
 
-1. Access the **Apps** section in your account's admin page and look for the Icommkt box;
-2. Then, click on the **Install** button;
-3. You'll see a warning message about needing to enter the necessary configurations. Scroll down and type in your **NAME OF A SETTINGS FIELD** in the `NAME OF THE APP` field.
-4. Click on **Save**.
+HTTPS clone
+```
+  git clone https://github.com/vtex-apps/affiliates-order-form-spy.git
+```
 
-### Using VTEX IO Toolbelt
+Once the clone is done, now let's login, create the workspace and get it running in the store.
+Tip: whenever you login, always check the 'manifest.json' file to get the correct name of the store.
 
-1. [Install](https://vtex.io/docs/recipes/development/installing-an-app/) the `vtex.icommkt@0.x` app. You can confirm that the app has now been installed by running `vtex ls` again. 
-2. Access the **Apps** section in your account's admin page and look for the NAME OF THE APP box. Once you find it, click on the box.
-3. Fill in the `NAME OF THE APP` field with your **NAME OF THE SETTINGS FIELD**.
-4. Click on **Save**.
+### Login and access the store
 
-<!-- Remember to also **showcase any necessary disclaimer** related to the app in this section, such as the different behavior it may display during its configuration. -->
+Access the project folder in terminal / cmd
+```
+  cd "saved directory"
+  vtex login youraccount
+```
 
-## Modus Operandi *(not mandatory)*
+### Check VTEX account and workspace
 
-There are scenarios in which an app can behave differently in a store, according to its configuration. It's crucial then to go through these **behavioral changes** in this section, allowing users to fully understand the **practical application** of the app in their store.
+To verify the VTEX account and workspace in use, just type
 
-If you feel compelled to give further details, such as the app's **relationship with others**, don't hesitate to use this section. 
+```
+  vtex whoami
+```
 
-<!-- DOCS-IGNORE:start -->
-## Contributors ✨
+### Creating your workspace in the store
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+```
+  vtex use 'vtex000'
+  (by default, we use jira task number vtex000 without spaces and hyphen).
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+### Link your workspace in the store
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
-<!-- DOCS-IGNORE:end -->
+```
+  vtex link vtex000
+  (which would be your ws id)
+```
+
+### Start your workspace in the store
+
+  The server will start up in your WS environment just log in
+
+```
+https://vtex000--yourstore.myvtex.com
+```
+
+## 🛠️ Built with
+
+* [Node](https://nodejs.org/en/docs/)
+* [Typescript](https://www.typescriptlang.org/docs/)
+* [GraphQl](https://graphql.org/code/#javascript)
+
+## 📌 Version
+
+ Please note the changelog file and tags in this repository (https://github.com/vtex-apps/affiliates-order-form-spy/blob/master/CHANGELOG.md) 
+
+## ✒️ Authors
+
+* **Gabriel Eluan** - *Developer* - [Gabriel Eluan](https://github.com/gabEluan)
+* **Gabriel Hosino** - *Developer* - [Gabriel Hosino](https://gitlab.com/gabrielHosino)
+* **Matheus Izidio** - *Developer* - [Matheus Izidio](https://gitlab.com/MIzidio)
+* **Gabriel Barros** - *Developer* - [Gabriel Barros](https://gitlab.com/GabrielBarross)
