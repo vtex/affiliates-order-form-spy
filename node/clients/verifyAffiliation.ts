@@ -3,7 +3,7 @@ import { AppClient } from '@vtex/api'
 
 export class VerifyAffiliation extends AppClient {
   constructor(context: IOContext, options?: InstanceOptions) {
-    super('vtex.affiliates@0.x', context, {
+    super('vtex.affiliates@1.x', context, {
       ...options,
       headers: {
         ...options?.headers,
