@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fix
+
+- Major of affiliates to fix the lead flow
+
 ## [0.1.3] - 2022-09-22
 ### Fixed
 
