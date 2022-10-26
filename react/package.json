@@ -23,6 +23,8 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "vtex.affiliates-order-form-spy": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.affiliates-order-form-spy@1.0.1/public/@types/vtex.affiliates-order-form-spy",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@7.45.0/public/@types/vtex.render-runtime"
   }
 }

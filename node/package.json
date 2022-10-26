@@ -13,7 +13,8 @@
     "@vtex/tsconfig": "^0.5.6",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.4",
-    "typescript": "3.9.7"
+    "typescript": "3.9.7",
+    "vtex.affiliates-order-form-spy": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.affiliates-order-form-spy@1.0.1/public/@types/vtex.affiliates-order-form-spy"
   },
   "scripts": {
     "lint": "tsc --noEmit --pretty",
