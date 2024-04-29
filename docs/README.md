@@ -1,5 +1,7 @@
 # Affiliates Order Form Spy
 
+> ⚠️ This app is no longer maintained by VTEX. This means support and maintenance are no longer provided.
+
 The VTEX Affiliates Order Form Spy app is responsible for getting the checkout email and monitoring the order form, sending the email information for the Affiliates main app to use on the order flow.
 
 ## 🚀 Getting started
