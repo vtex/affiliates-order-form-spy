@@ -12,6 +12,6 @@ export const onEmailChanged = (old: OrderForm, updated: OrderForm) => {
     eventName: 'order-form-email-updated',
     eventObject: { email: newEmail, orderFormId: updated.orderFormId },
     // triggered: oldEmail !== newEmail,
-    triggered: newEmail !== null,
+    triggered: newEmail !== null && newEmail !== undefined,
   } as OrderFormEvent<{ email: string; orderFormId: string }>
 }
