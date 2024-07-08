@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Issue with orderform. Avoid Creating new orderform when user is not logged. A new orderForm deletes cart items when user is not logged
+
 ## [1.0.1] - 2022-10-14
 
 ### Fix
