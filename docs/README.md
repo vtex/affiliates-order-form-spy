@@ -1,14 +1,14 @@
 # Affiliates Order Form Spy
 
+[<i class="fa-brands fa-github"></i> Source code](https://github.com/vtex/affiliates-order-form-spy)
+
 > ⚠️ This app is no longer maintained by VTEX. This means support and maintenance are no longer provided.
 
-The VTEX Affiliates Order Form Spy app is responsible for getting the checkout email and monitoring the order form, sending the email information for the Affiliates main app to use on the order flow.
+The VTEX Affiliates Order Form Spy app retrieves the checkout email and monitors the order form, sending the email information to the Affiliates main app for use in the order flow.
 
-## 🚀 Getting started
+These instructions will help you get a copy of the running project on your local machine for querying the VTEX API and integrating with the **Affiliates Order Form Spy** app.
 
-These instructions will allow you to get a copy of the running project on your local machine for the purposes of querying the vtex api and integrating with app **Affiliates Order Form Spy**.
-
-## 🔧 Installation
+## Installation
 
 To start the installation, you need to clone the GitLab project into a directory of your choice:
 
@@ -28,12 +28,11 @@ HTTPS clone
   git clone https://github.com/vtex-apps/affiliates-order-form-spy.git
 ```
 
-Once the clone is done, now let's login, create the workspace and get it running in the store.
-Tip: whenever you login, always check the 'manifest.json' file to get the correct name of the store.
+Once the clone is done, let's log in, create the workspace, and get it running in the store.
 
 ### Login and access the store
 
-Access the project folder in terminal / cmd
+Access the project folder in the terminal/cmd
 ```
   cd "saved directory"
   vtex login youraccount
@@ -63,21 +62,11 @@ To verify the VTEX account and workspace in use, just type
 
 ### Start your workspace in the store
 
-  The server will start up in your WS environment just log in
+  The server will start up in your WS environment:
 
 ```
 https://vtex000--yourstore.myvtex.com
 ```
-
-## 🛠️ Built with
-
-* [Node](https://nodejs.org/en/docs/)
-* [Typescript](https://www.typescriptlang.org/docs/)
-* [GraphQl](https://graphql.org/code/#javascript)
-
-## 📌 Version
-
- Please note the changelog file and tags in this repository (https://github.com/vtex-apps/affiliates-order-form-spy/blob/master/CHANGELOG.md) 
 
 ## ✒️ Authors
 
